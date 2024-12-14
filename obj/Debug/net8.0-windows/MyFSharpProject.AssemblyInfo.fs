@@ -14,4 +14,6 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyProductAttribute("MyFSharpProject")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("MyFSharpProject")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
+[<assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")>]
+[<assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")>]
 do()

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Qjd9KF7RTjhjMgsIUvd88jMGS7m9myGhcL/bEBv8Z7JOXttFVL0KTKul6/0muC9MtQEsX2qAKcXTSG4NwZebEg==",
+  "dgSpecHash": "T+njllF4UXtlGndbHdeVr8ZCe+LIqqkkdV0hOK9eUMGfo8MqbW9SYW9qjPW8ycNq/Y3LqOIRRkh111d+ePuaUw==",
   "success": true,
   "projectFilePath": "C:\\Users\\saraabbas\\myproject\\Library-Management-system-f-\\MyFSharpProject\\MyFSharpProject.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\saraabbas\\.nuget\\packages\\fsharp.core\\8.0.200\\fsharp.core.8.0.200.nupkg.sha512"
+    "C:\\Users\\saraabbas\\.nuget\\packages\\fsharp.core\\8.0.200\\fsharp.core.8.0.200.nupkg.sha512",
+    "C:\\Users\\saraabbas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
