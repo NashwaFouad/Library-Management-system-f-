@@ -30,3 +30,12 @@ let loadLibraryFromFile () =
         library <- JsonConvert.DeserializeObject<Map<string, Book>>(json)
     else
         library <- Map.empty
+
+
+        
+// Function to add a new book
+let addBook title author genre =
+    let book = { Title = title; Author = author; Genre = genre; IsBorrowed = false; BorrowDate = None }
+    library <- library.Add(title, book)
+    saveLibraryToFile ()
+    "Book added successfully"
