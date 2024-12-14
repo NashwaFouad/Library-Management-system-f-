@@ -113,11 +113,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\saraabbas\\MyFSharpProject\\MyFSharpProject.fsproj",
+      "projectUniqueName": "C:\\Users\\saraabbas\\myproject\\Library-Management-system-f-\\MyFSharpProject\\MyFSharpProject.fsproj",
       "projectName": "MyFSharpProject",
-      "projectPath": "C:\\Users\\saraabbas\\MyFSharpProject\\MyFSharpProject.fsproj",
+      "projectPath": "C:\\Users\\saraabbas\\myproject\\Library-Management-system-f-\\MyFSharpProject\\MyFSharpProject.fsproj",
       "packagesPath": "C:\\Users\\saraabbas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saraabbas\\MyFSharpProject\\obj\\",
+      "outputPath": "C:\\Users\\saraabbas\\myproject\\Library-Management-system-f-\\MyFSharpProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\saraabbas\\AppData\\Roaming\\NuGet\\NuGet.Config",
