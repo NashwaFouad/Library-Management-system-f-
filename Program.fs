@@ -39,3 +39,23 @@ let addBook title author genre =
     library <- library.Add(title, book)
     saveLibraryToFile ()
     "Book added successfully"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
