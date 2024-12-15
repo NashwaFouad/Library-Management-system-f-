@@ -1,4 +1,4 @@
-﻿open System
+open System
 open System.Windows.Forms
 open Newtonsoft.Json
 open System.IO
