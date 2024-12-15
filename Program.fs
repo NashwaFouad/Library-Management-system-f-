@@ -1,5 +1,3 @@
-//////$$$$$$$$$$$$$$$$$$$$$$$ phase(2)
-
 // Function to add a new book
 let addBook title author genre =
     let book = { Title = title; Author = author; Genre = genre; IsBorrowed = false; BorrowDate = None }
