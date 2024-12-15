@@ -39,3 +39,36 @@ let addBook title author genre =
     library <- library.Add(title, book)
     saveLibraryToFile ()
     "Book added successfully"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Function to display all books
+let displayBooks () =
+    let booksList = 
+        library 
+        |> Map.toList 
+        |> List.map (fun (title, book) ->
+            let status = if book.IsBorrowed then "Borrowed" else "Available"
+            sprintf "\r\nTitle: %s%sAuthor: %s%sGenre: %s%sStatus: %s \r\n" 
+                    book.Title 
+                    System.Environment.NewLine 
+                    book.Author 
+                    System.Environment.NewLine 
+                    book.Genre 
+                    System.Environment.NewLine 
+                    status
+        )
+    String.Join("\n \n", booksList)  // This add two lines between different books
