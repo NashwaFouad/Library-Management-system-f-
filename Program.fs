@@ -17,4 +17,4 @@ let searchBook title =
                          | None -> "Borrowed"
                      else "Available"
         sprintf "Title: %s\nAuthor: %s\nGenre: %s\nStatus: %s" book.Title book.Author book.Genre status
-    | None -> "Book not found
+    | None -> "Book not found"
