@@ -71,4 +71,4 @@ let displayBooks () =
                     System.Environment.NewLine 
                     status
         )
-    String.Join("\n \n", book)  // This add two lines between different books
+    String.Join("\n \n", booksList)  // This add two lines between different books
