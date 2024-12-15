@@ -10,7 +10,11 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("MyFSharpProject")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
+<<<<<<< Updated upstream
 [<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe318fc65a46f75f5ff672823dfb373e3120c8e8")>]
+=======
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcba0d5217557dda2ee7c11a745bcf0376c5a950")>]
+>>>>>>> Stashed changes
 [<assembly: System.Reflection.AssemblyProductAttribute("MyFSharpProject")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("MyFSharpProject")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
