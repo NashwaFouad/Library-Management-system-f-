@@ -13,6 +13,6 @@ let borrowBook title =
         let updatedBook = { book with IsBorrowed = true; BorrowDate = Some DateTime.Now }
         library <- library.Add(title, updatedBook)
         saveLibraryToFile ()
-        "Book borrowed successfully"
+        "Book successfully"
     | Some book -> "This book is already borrowed"
     | None -> "Book not found"
