@@ -118,7 +118,7 @@ let searchBook title =
         sprintf "Title: %s\nAuthor: %s\nGenre: %s\nStatus: %s" book.Title book.Author book.Genre status
     | None -> "Book not found"
 
-    // Function to return a book  my task
+    // Function to return a book  
 let returnBook title =
     match library.TryFind(title) with
     | Some book when book.IsBorrowed ->
