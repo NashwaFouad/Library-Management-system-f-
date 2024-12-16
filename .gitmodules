@@ -1,0 +1,3 @@
+[submodule "MyFSharpProject"]
+	path = MyFSharpProject
+	url = https://github.com/NashwaFouad/MyFSharpProject.git
