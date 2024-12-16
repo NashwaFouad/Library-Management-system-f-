@@ -5,6 +5,17 @@ let addBook title author genre =
     saveLibraryToFile ()
     "Book added successfully"
 
+// Function to borrow a book and automatically record the borrow date
+let borrowBook title =
+    match library.TryFind(title) with
+    | Some book when not book.IsBorrowed -> 
+        let updatedBook = { book with IsBorrowed = true; BorrowDate = Some DateTime.Now }
+        library <- library.Add(title, updatedBook)
+        saveLibraryToFile ()
+        "Book borrowed successfully"
+    | Some book -> "This book is already borrowed"
+    | None -> "Book not found"
+
 // Function to display all books
 let displayBooks () =
     let booksList = 
