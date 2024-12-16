@@ -5,6 +5,24 @@ let addBook title author genre =
     saveLibraryToFile ()
     "Book added successfully"
 
+// Function to display all books
+let displayBooks () =
+    let booksList = 
+        library 
+        |> Map.toList 
+        |> List.map (fun (title, book) ->
+            let status = if book.IsBorrowed then "Borrowed" else "Available"
+            sprintf "\r\nTitle: %s%sAuthor: %s%sGenre: %s%sStatus: %s \r\n" 
+                    book.Title 
+                    System.Environment.NewLine 
+                    book.Author 
+                    System.Environment.NewLine 
+                    book.Genre 
+                    System.Environment.NewLine 
+                    status
+        )
+    String.Join("\n \n", booksList)  // This adds two lines between different books
+
 // Event Handlers for Buttons Logic
 addButton.Click.Add(fun _ ->
     let title = titleTextBox.Text
