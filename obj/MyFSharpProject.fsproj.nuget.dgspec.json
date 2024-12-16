@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saraabbas\\MyFSharpProject\\MyFSharpProject.fsproj": {}
+    "C:\\Users\\saraabbas\\myproject\\Library-Management-system-f-\\MyFSharpProject\\MyFSharpProject.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\saraabbas\\MyFSharpProject\\MyFSharpProject.fsproj": {
+    "C:\\Users\\saraabbas\\myproject\\Library-Management-system-f-\\MyFSharpProject\\MyFSharpProject.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saraabbas\\MyFSharpProject\\MyFSharpProject.fsproj",
+        "projectUniqueName": "C:\\Users\\saraabbas\\myproject\\Library-Management-system-f-\\MyFSharpProject\\MyFSharpProject.fsproj",
         "projectName": "MyFSharpProject",
-        "projectPath": "C:\\Users\\saraabbas\\MyFSharpProject\\MyFSharpProject.fsproj",
+        "projectPath": "C:\\Users\\saraabbas\\myproject\\Library-Management-system-f-\\MyFSharpProject\\MyFSharpProject.fsproj",
         "packagesPath": "C:\\Users\\saraabbas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saraabbas\\MyFSharpProject\\obj\\",
+        "outputPath": "C:\\Users\\saraabbas\\myproject\\Library-Management-system-f-\\MyFSharpProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\saraabbas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net8.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -26,8 +26,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
         },
@@ -38,13 +38,18 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
           "dependencies": {
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[8.0.200, )",
+              "generatePathProperty": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )",
               "generatePathProperty": true
             }
           },
@@ -62,6 +67,9 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
