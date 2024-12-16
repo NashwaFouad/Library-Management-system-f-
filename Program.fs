@@ -117,3 +117,14 @@ let searchBook title =
                      else "Available"
         sprintf "Title: %s\nAuthor: %s\nGenre: %s\nStatus: %s" book.Title book.Author book.Genre status
     | None -> "Book not found"
+
+    // Function to return a book  my task
+let returnBook title =
+    match library.TryFind(title) with
+    | Some book when book.IsBorrowed ->
+        let updatedBook = { book with IsBorrowed = false; BorrowDate = None }
+        library <- library.Add(title, updatedBook)
+        saveLibraryToFile ()
+        "Book returned successfully"
+    | Some book -> "This book was not borrowed"
+    | None -> "Book not found"
