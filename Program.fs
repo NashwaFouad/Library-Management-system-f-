@@ -128,3 +128,32 @@ let returnBook title =
         "Book returned successfully"
     | Some book -> "This book was not borrowed"
     | None -> "Book not found"
+      // Create the Form and controls
+let form = new Form(Text = "Library Management System",
+                     Width = 1000,
+                     Height = 700,
+                     BackgroundImage = System.Drawing.Image.FromFile(@"C:\pl3 project\book-8833738_640.jpg"))
+form.StartPosition <- FormStartPosition.CenterScreen
+
+// Define controls
+let titleLabel = new Label(Text = "Title:", Location = new Drawing.Point(10, 10), AutoSize = true)
+let titleTextBox = new TextBox(Location = new Drawing.Point(100, 10), Width = 200)
+
+let authorLabel = new Label(Text = "Author:", Location = new Drawing.Point(10, 40), AutoSize = true)
+let authorTextBox = new TextBox(Location = new Drawing.Point(100, 40), Width = 200)
+
+let genreLabel = new Label(Text = "Genre:", Location = new Drawing.Point(10, 70), AutoSize = true)
+let genreTextBox = new TextBox(Location = new Drawing.Point(100, 70), Width = 200)
+
+let resultLabel = new Label(Text = "", Location = new Drawing.Point(10, 200), AutoSize = true)
+let booksDisplay = new TextBox(Text = "Box List",Location = new Drawing.Point(40, 350), Width = 900, Height = 300, Multiline = true, ReadOnly = true,BackColor=System.Drawing.Color.Beige)
+
+let addButton = new Button(Text = "Add Book", Location = new Drawing.Point(10, 150), Width = 100,Height=40,BackColor=System.Drawing.Color.LightGreen)
+let searchButton = new Button(Text = "Search Book", Location = new Drawing.Point(120, 150), Width = 100,Height=40, BackColor = System.Drawing.Color.BlanchedAlmond)
+let borrowButton = new Button(Text = "Borrow Book", Location = new Drawing.Point(230, 150), Width = 100,Height=40,BackColor=System.Drawing.Color.BlanchedAlmond)
+let returnButton = new Button(Text = "Return Book", Location = new Drawing.Point(340, 150), Width = 100,Height=40,BackColor=System.Drawing.Color.BlanchedAlmond)
+let deleteButton = new Button(Text = "Delete Book", Location = new Drawing.Point(450, 150), Width = 100,Height=40,BackColor=System.Drawing.Color.Red)
+let displayButton = new Button(Text = "Display Books", Location = new Drawing.Point(560, 150), Width = 100,Height=40,BackColor=System.Drawing.Color.CadetBlue)
+
+// Load library data from file when starting the program
+loadLibraryFromFile ()
